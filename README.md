@@ -5,13 +5,13 @@ This repo contains my personal dots for my qtile's cofig
 - **OS:** [Arch Linux](https://archlinux.org/)
 - **WM:** [Qtile](https://qtile.org/) with [qtile-extras](https://github.com/elParaguayo/qtile-extras)
 - **Compositor:** Picom
-- **Term:** [Kitty](https://github.com/kovidgoyal/kitty)
+- **Term:** [Kitty](https://sw.kovidgoyal.net/kitty/)
 - **Shell:** ZSH
 - **Launcher:** [Rofi](https://github.com/davatorium/rofi)
 - **Clipboard manager** [greenclip](https://github.com/erebe/greenclip) (requires Rofi)
 - **Icons:** [Gruvbox Plus icon pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack)
 - **GTK:** [Gruvbox-Dark-BL-MOD](https://www.pling.com/p/2046839)
-- **Text Editor:** [LazyVim](https://www.lazyvim.org/) with [gruvbox](https://github.com/ellisonleao/gruvbox.nvim)
+- **Text Editor:** [NeoVIM]()
 - **Colorscheme:** Gruvbox
 
 
