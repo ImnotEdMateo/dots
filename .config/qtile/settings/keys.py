@@ -43,7 +43,7 @@ keys = [
     Key([mod], "v", lazy.spawn("rofi -font 'hack 15' -modi 'clipboard:~/.config/qtile/paste_modi.sh' -show clipboard"), desc="clipboard manager"),
     
     # POGRAMAS
-    Key([mod], "b", lazy.spawn("firefox"), desc="Launch FURROFOX OwO"),
+    Key([mod], "b", lazy.spawn("librewolf"), desc="Launch LibreFurro OwO"),
     Key([mod], "e", lazy.spawn("kitty sh -c 'ranger'"), desc="Launch ranger"),
 
     # Multimedia
