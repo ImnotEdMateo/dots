@@ -36,6 +36,7 @@ return {
       dashboard.section.buttons.val = {
         dashboard.button("n", " new file", ":ene<CR>"),
         dashboard.button("f", " find file", ":Telescope find_files <CR>"),
+        dashboard.button("g", "󰱼 find text", ":Telescope live_grep <CR>"),
         dashboard.button("r", " recent files", ":Telescope oldfiles <CR>"),
         dashboard.button("l", "󰒲 lazy", ":Lazy <CR>"),
         dashboard.button("c", " config", ":e ~/.config/nvim/ <CR>"),
