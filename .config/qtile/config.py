@@ -80,7 +80,7 @@ screens = [
                     discharge_char="  󰁹",
                     charge_char="  󰂄",
                 ),
-                widget.Volume(emoji=True, emoji_list=[" 󰖁", " " " 󰖀", " 󰕾"]),
+                widget.Volume(emoji=True, emoji_list=["󰝟", "󰕿", "󰖀", "󰕾"], fontsize=15,),
                 widget.Volume(),
                 widget.Clock(format=" %H:%M "),
             ],

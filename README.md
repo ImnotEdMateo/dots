@@ -6,7 +6,7 @@ This repo contains my personal dots for my qtile's cofig
 - **WM:** [Qtile](https://qtile.org/) with [qtile-extras](https://github.com/elParaguayo/qtile-extras)
 - **Compositor:** Picom
 - **Term:** [Kitty](https://sw.kovidgoyal.net/kitty/)
-- **Shell:** ZSH
+- **Shell:** ZSH 
 - **Launcher:** [Rofi](https://github.com/davatorium/rofi)
 - **Clipboard manager** [greenclip](https://github.com/erebe/greenclip) (requires Rofi)
 - **Icons:** [Gruvbox Plus icon pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack)
@@ -18,7 +18,7 @@ This repo contains my personal dots for my qtile's cofig
 ## DEPENDENCIES
 Run this command to install all the dependencies available in the **core and extra** repositories of Arch Linux.
 ~~~
-pacman -S xdotool ripgrep feh pipewire-jack pipewire-alsa rofi brightnessctl playerctl scrot
+pacman -S qtile picom kitty zsh rofi xdotool neovim ripgrep feh pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot
 ~~~
 Run this command to install all the dependencies available in AUR. *Assuming your AUR Helper is [yay](https://github.com/Jguer/yay).*
 ~~~
