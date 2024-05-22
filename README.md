@@ -18,7 +18,7 @@ This repo contains my personal dots for my qtile's cofig
 ## DEPENDENCIES
 Run this command to install all the dependencies available in the **core and extra** repositories of Arch Linux.
 ~~~
-pacman -S qtile picom kitty zsh rofi xdotool neovim ripgrep feh pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot
+pacman -S qtile picom kitty zsh rofi xdotool neovim ripgrep feh pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot python-pillow
 ~~~
 Run this command to install all the dependencies available in AUR. *Assuming your AUR Helper is [yay](https://github.com/Jguer/yay).*
 ~~~
