@@ -1,7 +1,8 @@
 import os
 import subprocess
 
-from settings.keys import keys, mod, lazy
+from settings.keys import *
+from settings.bar import *
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile import hook
@@ -57,43 +58,6 @@ widget_defaults = dict(
     padding=4,
 )
 extension_defaults = widget_defaults.copy()
-
-screens = [
-    Screen(
-        top=bar.Bar(
-            [
-                widget.CurrentLayoutIcon(),
-                widget.GroupBox(
-                    fontsize=11,
-                    highlight_method="text",
-                    highlight_color="#1d2021",
-                    this_current_screen_border="#fabd2f",
-                    foreground="#ebdbb2",
-                    active="#fbf1c7",
-                    inactive="#a89984",
-                    padding=4,
-                ),
-                widget.Spacer(),
-                widget.Systray(),
-                widget.Battery(
-                    format="{char} {percent:2.0%} ",
-                    discharge_char="  󰁹",
-                    charge_char="  󰂄",
-                ),
-                widget.Volume(emoji=True, emoji_list=["󰝟", "󰕿", "󰖀", "󰕾"], fontsize=15,),
-                widget.Volume(),
-                widget.Clock(format=" %H:%M "),
-            ],
-            32,
-            background="#1d2021",
-            foreground="#ebdbb2",
-            margin=4,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
-        x11_drag_polling_rate=60,
-    ),
-]
 
 # Drag floating layouts.
 mouse = [
