@@ -18,13 +18,20 @@ This repo contains my personal dots for my qtile's cofig
 ## DEPENDENCIES
 Run this command to install all the dependencies available in the **core and extra** repositories of Arch Linux.
 ~~~
-pacman -S qtile picom kitty zsh rofi xdotool neovim ripgrep feh pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot python-pillow
+pacman -S qtile picom kitty zsh rofi xdotool neovim ripgrep feh pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot python-pillow xcopy
 ~~~
 Run this command to install all the dependencies available in AUR. *Assuming your AUR Helper is [yay](https://github.com/Jguer/yay).*
 ~~~
 yay -S qtile-extras rofi-greenclip
 ~~~
 Additionally, it is recommended to install [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip) to avoid issues with fonts.
+
+## INSTALATION
+Just move the files from the repo from your home file
+~~~
+git clone https://codeberg.org/Imnot_EdMateo/dots
+mv dots/* ./
+~~~
 
 ## SHOWCASE
 ![SHOWCASE](./stuff/com.png)

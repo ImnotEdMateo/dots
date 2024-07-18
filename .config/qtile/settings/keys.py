@@ -57,6 +57,7 @@ keys = [
     Key(["control"], "F5", lazy.spawn("brightnessctl set 10%-"), desc="bajarbrillo"),
 
     # SCREENSHOTS
-    Key([], "Print", lazy.spawn("scrot -e 'mv $f ~/Imágenes/SCREENSHOTS/'"), desc="tomar screenshot y guardar en carpeta de capturas"),
+    Key([], "Print", lazy.spawn("scrot -e 'mv $f ~/Imágenes/SCREENSHOTS/ && xclip -selection clipboard -target image/png -i ~/Imágenes/SCREENSHOTS/$f'"), desc="tomar screenshot y guardar en carpeta de capturas y portapapeles"),
+Key(["control"], "Print", lazy.spawn("scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'"), desc="sec. de la pantalla"),
     Key(["control"], "Print", lazy.spawn("scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'"), desc="sec. de la pantalla"),
 ]
