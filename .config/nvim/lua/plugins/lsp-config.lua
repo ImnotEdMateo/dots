@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = {"html", "cssls", "tsserver", "tailwindcss"},
+                ensure_installed = {"cssls", "tsserver", "tailwindcss", "emmet_ls"},
             })
         end
     },
@@ -19,15 +19,6 @@ return {
             local lspconfig = require('lspconfig')
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-            lspconfig.html.setup({
-                filetypes = {'html', 'htmldjango'},
-                capabilities = capabilities,
-                init_options = {
-                    configurationSection = { "html", "htmldjango" },
-                    embeddedLanguages = { css = true, javascript = true }
-                },
-                settings = {},
-            })
             lspconfig.cssls.setup({
                 capabilities = capabilities
             })
@@ -37,6 +28,11 @@ return {
             lspconfig.tsserver.setup({
                 capabilities = capabilities
             })
+            lspconfig.emmet_ls.setup({
+                capabilities = capabilities,
+                filetypes = { 'html', 'css', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+            })
+
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
         end
     }
