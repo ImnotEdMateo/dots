@@ -9,14 +9,14 @@ return {
    config = function()
       vim.keymap.set('n', '<space>e', ':Neotree filesystem toggle left<CR>')
       require("neo-tree").setup({
-	filesystem = {
+        filesystem = {
           filtered_items = {
             visible = false,
             hide_dotfiles = false,
             hide_gitignored = false,
             hide_hidden = false,
-	},
-       },
-     })
+          },
+        },
+      })
    end
 }

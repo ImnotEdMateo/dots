@@ -23,11 +23,14 @@ return {
       inverse = true, -- invert background for search, diffs, statuslines and errors
       contrast = "hard", -- can be "hard", "soft" or empty string
       palette_overrides = {},
-      overrides = {},
+      overrides = {
+        -- Override Neo-tree folder colors
+        NeoTreeDirectoryIcon = { fg = "#83a598" },
+        NeoTreeDirectoryName = { fg = "#83a598" },
+      },
       dim_inactive = false,
       transparent_mode = false,
     })
     vim.cmd("colorscheme gruvbox")
   end
 }
-

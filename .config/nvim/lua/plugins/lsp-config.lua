@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = {"html", "cssls", "tsserver"},
+                ensure_installed = {"html", "cssls", "tsserver", "tailwindcss"},
             })
         end
     },
@@ -17,6 +17,8 @@ return {
         "neovim/nvim-lspconfig",
         config = function()
             local lspconfig = require('lspconfig')
+            local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
             lspconfig.html.setup({
                 filetypes = {'html', 'htmldjango'},
                 capabilities = capabilities,
@@ -27,6 +29,9 @@ return {
                 settings = {},
             })
             lspconfig.cssls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.tailwindcss.setup({
                 capabilities = capabilities
             })
             lspconfig.tsserver.setup({
