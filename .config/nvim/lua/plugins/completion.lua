@@ -37,7 +37,7 @@ return {
                     { name = 'luasnip' },
                     { name = 'buffer'},
                     { name = 'path'},
-                    { name = 'emmet_ls' }, 
+                    { name = 'emmet_ls' }, -- Añadir esta línea
                 }),
             })
         end,
