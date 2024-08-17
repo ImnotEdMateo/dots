@@ -30,7 +30,7 @@ Additionally, it is recommended to install [Hack Nerd Font](https://github.com/r
 Just move the files from the repo from your home file
 ~~~
 git clone https://codeberg.org/Imnot_EdMateo/dots
-mv dots/* ./
+mv dots/* ~
 ~~~
 
 ## SHOWCASE
