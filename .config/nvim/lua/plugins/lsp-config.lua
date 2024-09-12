@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = {"cssls", "tsserver", "tailwindcss", "emmet_ls"},
+                ensure_installed = {"cssls", "tsserver", "tailwindcss", "emmet_ls", "mdx_analyzer"},
             })
         end
     },
@@ -22,15 +22,23 @@ return {
             lspconfig.cssls.setup({
                 capabilities = capabilities
             })
+
+            lspconfig.mdx_analyzer.setup({
+                capabilities = capabilities,
+                filetypes = { "mdx" },  -- Asegúrate de especificar 'mdx' como un tipo de archivo
+            })
+
             lspconfig.tailwindcss.setup({
                 capabilities = capabilities
             })
+
             lspconfig.tsserver.setup({
                 capabilities = capabilities
             })
+
             lspconfig.emmet_ls.setup({
                 capabilities = capabilities,
-                filetypes = { 'html', 'css', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+                filetypes = { 'html', 'css', 'javascript', 'javascriptreact', 'typescriptreact', 'astro' },
             })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
