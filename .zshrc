@@ -118,5 +118,9 @@ alias vim="nvim"
 alias vi="'vim'"
 alias ls="lsd"
 alias cat="bat"
+alias ssh="kitten ssh"
 alias reboot="sudo reboot now"
 alias shutdown="shutdown now"
+
+# Created by `pipx` on 2024-09-05 00:27:00
+export PATH="$PATH:/home/edmateo/.local/bin"
