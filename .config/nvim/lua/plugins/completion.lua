@@ -1,6 +1,14 @@
 return {
     {
-        "hrsh7th/cmp-nvim-lsp"
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+    },
+    {
+        "vlime/vlime",
+    },
+    {
+      "hrsh7th/cmp-nvim-lsp"
     },
     {
         "L3MON4D3/LuaSnip",
@@ -37,7 +45,7 @@ return {
                     { name = 'luasnip' },
                     { name = 'buffer'},
                     { name = 'path'},
-                    { name = 'emmet_ls' }, -- Añadir esta línea
+                    { name = 'emmet_ls' },
                 }),
             })
         end,
