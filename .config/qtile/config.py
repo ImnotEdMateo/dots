@@ -39,7 +39,7 @@ for i in groups:
 def init_layout_theme():
     return {
         "margin": 5,
-        "border_width": 2,
+        "border_width": 0,
         "border_focus": "#000000",
         "border_normal": "#000000",
     }
@@ -48,8 +48,8 @@ def init_layout_theme():
 layout_theme = init_layout_theme()
 
 layouts = [
-    layout.Columns(**layout_theme),
-    layout.Max(),
+    layout.Plasma(**layout_theme),
+    layout.Max(**layout_theme),
 ]
 
 widget_defaults = dict(

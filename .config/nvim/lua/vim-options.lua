@@ -6,6 +6,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "number"
 vim.opt.syntax = 'enable'
+vim.g.maplocalleader = ""
 vim.cmd("set clipboard+=unnamedplus")
 vim.cmd("nnoremap j gj")
 vim.cmd("nnoremap k gk")

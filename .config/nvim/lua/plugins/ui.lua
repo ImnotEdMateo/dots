@@ -45,8 +45,9 @@ return {
         spacing = 0,
         position = "center"
       }
+
       local function footer()
-        return "自殺してください\n  エソティリン"
+        return "    人間が繋がれば\n  人生も長くなるので…"
       end
 
       dashboard.section.footer.val = footer()

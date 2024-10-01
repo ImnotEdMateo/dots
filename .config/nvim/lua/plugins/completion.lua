@@ -5,9 +5,6 @@ return {
         config = true
     },
     {
-        "vlime/vlime",
-    },
-    {
       "hrsh7th/cmp-nvim-lsp"
     },
     {
