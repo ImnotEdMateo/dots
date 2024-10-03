@@ -48,7 +48,7 @@ def init_layout_theme():
 layout_theme = init_layout_theme()
 
 layouts = [
-    layout.Plasma(**layout_theme),
+    layout.Columns(**layout_theme),
     layout.Max(**layout_theme),
 ]
 
