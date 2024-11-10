@@ -1,3 +1,4 @@
+-- Shitty configurations
 vim.cmd("set tabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set expandtab")
@@ -14,3 +15,22 @@ vim.cmd("nnoremap <Down> gj")
 vim.cmd("nnoremap <Down> gj")
 vim.cmd("inoremap <Down> <C-o>gj")
 vim.cmd("inoremap <Up> <C-o>gk")
+
+-- Spanish (my native language) Spell Checker in Markdown Files
+-- For English just uncomment the option commented
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt_local.spell = true
+        vim.opt_local.spelllang = "es"
+        -- vim.opt_local.spelllang = "en"
+    end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {"lua", "vim", "typescript", "typescriptreact", "javascript", "javascriptreact"},
+    callback = function()
+        vim.opt_local.spell = false
+    end,
+})
+
