@@ -16,10 +16,10 @@ vim.cmd("nnoremap <Down> gj")
 vim.cmd("inoremap <Down> <C-o>gj")
 vim.cmd("inoremap <Up> <C-o>gk")
 
--- Spanish (my native language) Spell Checker in Markdown Files
+-- Spanish (my native language) Spell Checker in Markdown (and their friends) Files
 -- For English just uncomment the option commented
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "markdown",
+    pattern = {"markdown", "mdx", "astro"},
     callback = function()
         vim.opt_local.spell = true
         vim.opt_local.spelllang = "es"
