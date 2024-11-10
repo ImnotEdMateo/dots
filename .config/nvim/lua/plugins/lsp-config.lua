@@ -10,7 +10,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {"cssls", "ts_ls", "tailwindcss", "emmet_ls", ""},
+        ensure_installed = {"cssls", "ts_ls", "tailwindcss", "emmet_ls"}
       })
     end
   },  
@@ -21,7 +21,7 @@ return {
       local lspconfig = require('lspconfig')
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       lspconfig.cssls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
         settings = {
           css = { 
             lint = {
