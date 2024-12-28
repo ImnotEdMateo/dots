@@ -8,6 +8,9 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile import hook
 from qtile_extras import widget
 from qtile_extras.widget.decorations import BorderDecoration
+from qtile_extras.layout.decorations import ConditionalBorder, GradientBorder
+from qtile_extras.layout.decorations.borders import RoundedCorners
+from libqtile.backend.wayland import InputConfig
 
 groups = [Group(i) for i in "123456789"]
 
@@ -40,6 +43,7 @@ def init_layout_theme():
     return {
         "margin": 5,
         "border_width": 0,
+        "border_radius": 10,
         "border_focus": "#000000",
         "border_normal": "#000000",
     }
@@ -96,9 +100,14 @@ focus_on_window_activation = "smart"
 reconfigure_screens = True
 
 auto_minimize = True
-wl_input_rules = None
-wmname = "Qtile"
 
+wl_input_rules = {
+    "type:keyboard": InputConfig(kb_layout="es"),
+    "type:touchpad": InputConfig(tap=True, natural_scroll=True),
+    "type:mouse": InputConfig(natural_scroll=False),
+}
+
+wmname = "Qtile"
 
 @hook.subscribe.startup_once
 def autostart():

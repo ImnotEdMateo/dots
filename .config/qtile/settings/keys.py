@@ -38,8 +38,8 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # ROFI
-    Key([mod], "r", lazy.spawn("rofi -font 'hack 15' -show drun -icon-theme 'GruvboxPlusMOD' -show-icons"), desc="Spawn a command using a prompt widget"),
-    Key([mod], "v", lazy.spawn("rofi -font 'hack 15' -modi 'clipboard:~/.config/qtile/paste_modi.sh' -show clipboard"), desc="clipboard manager"),
+    Key([mod], "r", lazy.spawn("rofi -font 'hack 15' -show drun -show-icons"), desc="Spawn a command using a prompt widget"),
+    Key([mod], "v", lazy.spawn("rofi -font 'hack 15' -modi 'clipboard:~/.config/qtile/paste_modi.sh' -show clipboard -show-icons"), desc="clipboard manager"),
     
     # POGRAMAS
     Key([mod], "b", lazy.spawn("librewolf"), desc="Launch LibreFurro OwO"),
@@ -57,7 +57,6 @@ keys = [
     Key(["control"], "F5", lazy.spawn("brightnessctl set 10%-"), desc="bajarbrillo"),
 
     # SCREENSHOTS
-    Key([], "Print", lazy.spawn("scrot -e 'mv $f ~/Imágenes/SCREENSHOTS/ && xclip -selection clipboard -target image/png -i ~/Imágenes/SCREENSHOTS/$f'"), desc="tomar screenshot y guardar en carpeta de capturas y portapapeles"),
-Key(["control"], "Print", lazy.spawn("scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'"), desc="sec. de la pantalla"),
-    Key(["control"], "Print", lazy.spawn("scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'"), desc="sec. de la pantalla"),
+    Key(["control"], "Print", lazy.spawn('sh -c "/home/edmateo/.local/bin/CtrlPrnts.sh"'), desc="sec. de la pantalla"),
+    Key([], "Print", lazy.spawn('sh -c "/home/edmateo/.local/bin/Prnts.sh"'), desc="captura depantalla"),
 ]

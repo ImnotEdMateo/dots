@@ -5,6 +5,8 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 
 screens = [
     Screen(
+        wallpaper='/home/edmateo/stuff/wallpaper.png',
+        wallpaper_mode='fill',
         top=bar.Bar(
             [
                 widget.CurrentLayoutIcon(),
