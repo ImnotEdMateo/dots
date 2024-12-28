@@ -53,8 +53,12 @@ keys = [
     Key([], "Pause", lazy.spawn("playerctl play-pause"), desc="play/pause everywhere"), # "Pause" is how my HP ProBook Regonize the pause key, u can change it
     
     # Brightness - For some reason, the brightness keys doesn't works in my HP ProBook
-    Key(["control"], "F6", lazy.spawn("brightnessctl set +10%"), desc="subirbrillo"),
-    Key(["control"], "F5", lazy.spawn("brightnessctl set 10%-"), desc="bajarbrillo"),
+    #Key([], "F6", lazy.spawn("brightnessctl set +10%"), desc="subirbrillo"),
+    #Key([], "F5", lazy.spawn("brightnessctl set 10%-"), desc="bajarbrillo"),
+
+    # Brightness
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%"), desc="subirbrillo"),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-"), desc="bajarbrillo"),
 
     # SCREENSHOTS
     Key(["control"], "Print", lazy.spawn('sh -c "/home/edmateo/.local/bin/CtrlPrnts.sh"'), desc="sec. de la pantalla"),
