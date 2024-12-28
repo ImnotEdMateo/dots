@@ -8,7 +8,7 @@ This repo contains my personal dots for my qtile's cofig
 - **Term:** [Kitty](https://sw.kovidgoyal.net/kitty/)
 - **Shell:** ZSH 
 - **Launcher:** [Rofi](https://github.com/davatorium/rofi)
-- **Clipboard manager** [greenclip](https://github.com/erebe/greenclip) (requires Rofi)
+- **Clipboard manager** [cliphist](https://github.com/sentriz/cliphist)
 - **Icons:** [Gruvbox Plus icon pack](https://github.com/SylEleuth/gruvbox-plus-icon-pack)
 - **GTK:** [gruvbox-material-gtk](https://github.com/TheGreatMcPain/gruvbox-material-gtk)
 - **Text Editor:** [NeoVIM](https://neovim.io/)
@@ -24,7 +24,7 @@ Run this command to install all the dependencies available in AUR. *Assuming you
 ~~~
 yay -S qtile-extras
 ~~~
-Additionally, it is recommended to install [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip) to avoid issues with fonts.
+Additionally, it is recommended to install [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip) and [Azuki Font](https://www.freejapanesefont.com/azuki-font-%e3%81%82%e3%81%9a%e3%81%8d%e3%83%95%e3%82%a9%e3%83%b3%e3%83%88/) to avoid issues with fonts.
 
 ## INSTALATION
 Just move the files from the repo from your home file
