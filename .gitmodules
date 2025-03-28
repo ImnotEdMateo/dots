@@ -1,0 +1,3 @@
+[submodule ".local/wm/dwm"]
+	path = .local/wm/dwm
+	url = https://github.com/ImnotEdMateo/dwm
