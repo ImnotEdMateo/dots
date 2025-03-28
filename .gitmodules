@@ -1,3 +1,6 @@
 [submodule ".local/wm/dwm"]
 	path = .local/wm/dwm
 	url = https://github.com/ImnotEdMateo/dwm
+[submodule ".local/wm/dwmblocks"]
+	path = .local/wm/dwmblocks
+	url = https://github.com/ImnotEdMateo/dwmblocks-async
