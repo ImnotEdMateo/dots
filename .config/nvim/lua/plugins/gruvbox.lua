@@ -1,7 +1,8 @@
 return {
   "ellisonleao/gruvbox.nvim",
-  name = "gruvbox",
+  lazy = false,
   priority = 1000,
+  name = "gruvbox",
   config = function()
     require("gruvbox").setup({
       terminal_colors = false,
@@ -20,11 +21,10 @@ return {
       invert_signs = false,
       invert_tabline = false,
       invert_intend_guides = false,
-      inverse = true, -- invert background for search, diffs, statuslines and errors
-      contrast = "hard", -- can be "hard", "soft" or empty string
+      inverse = false, -- prueba con false para ver si mejora la apariencia
+      contrast = "hard",
       palette_overrides = {},
       overrides = {
-        -- Override Neo-tree folder colors
         NeoTreeDirectoryIcon = { fg = "#83a598" },
         NeoTreeDirectoryName = { fg = "#83a598" },
       },
@@ -32,5 +32,5 @@ return {
       transparent_mode = false,
     })
     vim.cmd("colorscheme gruvbox")
-  end
+  end,
 }
