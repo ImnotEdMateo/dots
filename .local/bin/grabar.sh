@@ -1,0 +1,1 @@
+cd "$(xdg-user-dir VIDEOS)/records/" && ffmpeg -f x11grab -video_size 1366x768 -i :0.0 -f pulse -i default -vf scale=854:480 -c:v libx264 -codec:a flac "$(date).mkv" | ffplay -f v4l2 -i /dev/video0 -vf scale=320:240 -noborder
