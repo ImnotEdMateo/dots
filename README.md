@@ -6,7 +6,7 @@ This repo contains my shitty setup for my system
 In **core and extra** repos of **Arch Linux**
 
 ~~~bash
-kitty picom ranger zsh xdotool neovim ripgrep feh pipewire pipewire-pulse pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot python-pillow xclip xorg-server xorg-xauth xorg-xsetroot
+kitty picom ranger zsh xdotool neovim ripgrep feh lsd bat pipewire pipewire-pulse pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot python-pillow xclip xorg-server xorg-xauth xorg-xsetroot
 ~~~
 
 External things to build and install:
