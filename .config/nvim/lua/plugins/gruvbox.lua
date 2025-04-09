@@ -16,12 +16,12 @@ return {
         operators = false,
         folds = true,
       },
-      strikethrough = true,
+      strikethrough = false,
       invert_selection = false,
       invert_signs = false,
       invert_tabline = false,
       invert_intend_guides = false,
-      inverse = false, -- prueba con false para ver si mejora la apariencia
+      inverse = false, 
       contrast = "hard",
       palette_overrides = {},
       overrides = {
