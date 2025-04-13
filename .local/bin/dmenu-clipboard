@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DMENU="dmenu -l 0 -p clipboard \
+    -fn 'FiraCodeNerdFont-SemiBold:size=10' \
+    -nb '#1d2021' -nf '#ebdbb2' \
+    -sb '#488588' -sf '#ebdbb2'"
+
+greenclip print | grep . | eval "$DMENU" | xargs -r -d '\n' -I '{}' "$HOME/.local/bin/paste_modi.sh" '{}'

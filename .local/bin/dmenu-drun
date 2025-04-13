@@ -1,0 +1,18 @@
+#!/bin/bash
+
+DMENU="dmenu -i -p drun \
+    -fn 'FiraCodeNerdFont-SemiBold:size=10' \
+    -nb '#1d2021' -nf '#ebdbb2' \
+    -sb '#488588' -sf '#ebdbb2'"
+
+app=$(grep -r '^Name=' ~/.local/share/applications /usr/share/applications 2>/dev/null \
+    | cut -d= -f2- \
+    | sort -u \
+    | eval "$DMENU")
+
+if [ -n "$app" ]; then
+    desktop_file=$(grep -ril "Name=$app" ~/.local/share/applications /usr/share/applications 2>/dev/null | head -n 1)
+    if [ -n "$desktop_file" ]; then
+        gtk-launch "$(basename "$desktop_file" .desktop)"
+    fi
+fi
