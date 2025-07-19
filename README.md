@@ -16,4 +16,4 @@ External things to build and install:
 - [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip)
 - [Azuki Font](https://files.edmateo.site/azukifont.tar.gz) (For cool Japanese letters)
 
-Nada eso...
+That
