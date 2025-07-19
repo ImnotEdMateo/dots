@@ -2,19 +2,17 @@ return {
   {
     "williamboman/mason.nvim",
     config = function()
-        require("mason").setup()
+      require("mason").setup()
     end
   },
-
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {"cssls", "ts_ls", "tailwindcss", "emmet_ls", "gopls", "clangd"}
+        ensure_installed = {"cssls", "ts_ls", "tailwindcss", "emmet_ls", "gopls", "clangd", "texlab"}
       })
     end
   },  
-
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -50,6 +48,11 @@ return {
 
       lspconfig.clangd.setup({
         capabilities = capabilities,
+      })
+
+      lspconfig.texlab.setup({
+        capabilities = capabilities,
+        filetypes = { 'tex', 'plaintex' },
       })
 
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

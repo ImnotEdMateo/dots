@@ -1,20 +1,20 @@
 return { 
-    'fedepujol/move.nvim',
-    config = function()
-  	require('move').setup({
-      line = {
-        enable = true,  -- Habilita el movimiento de líneas
-        indent = true   -- Activa la indentación
-      },
-      block = {
-        enable = true,  -- Habilita el movimiento de bloques
-        indent = true   -- Activa la indentación
-      },
-      word = {
-        enable = true,  -- Habilita el movimiento de palabras
-      },
-      char = {
-        enable = false  -- Habilita el movimiento de caracteres
+  'fedepujol/move.nvim',
+  config = function()
+  require('move').setup({
+    line = {
+      enable = true,  -- Habilita el movimiento de líneas
+      indent = true   -- Activa la indentación
+    },
+    block = {
+      enable = true,  -- Habilita el movimiento de bloques
+      indent = true   -- Activa la indentación
+    },
+    word = {
+      enable = true,  -- Habilita el movimiento de palabras
+    },
+    char = {
+      enable = false  -- Habilita el movimiento de caracteres
       }
     })
 

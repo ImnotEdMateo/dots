@@ -169,7 +169,6 @@ return {
   {
     "nvim-tree/nvim-web-devicons",
     event = "VeryLazy",
-    commit = "0568104bf8d0c3ab16395433fcc5c1638efc25d4",
     opts = {
       override = {
         zsh = {
@@ -205,16 +204,19 @@ return {
     event = "VeryLazy"
   },
 
-}  -- {
-  --   'rcarriga/nvim-notify',
-  --   commit = "ea9c8ce7a37f2238f934e087c255758659948e0f",
-  --   event = { 'BufReadPost', 'BufNewFile' },
-  --   opts = { background_colour = '#000000' },
-  --   config = function(_, opts)
-  --     local notify = require('notify')
-  --     notify.setup(opts)
-  --     vim.notify = notify
-  --   end,
-  -- },
 
-  -- dressing.nvim
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    opts = {
+      code = {
+        width = 'block',
+        min_width = 45,
+        left_pad = 2,
+        language_pad = 2,
+      },
+      heading = {
+        icons = { '# ', '## ', '### ', '#### ', '##### ', '###### ' },
+      }
+    },
+  },
+}
