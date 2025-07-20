@@ -16,29 +16,34 @@ else
     exit 1
 fi
 
-# Asignar un símbolo según el estado de carga y el nivel de la batería
+# Condicional gulo para definir cómo se vel pto icono
 if [ "$AC_STATUS" -eq 1 ]; then
-    ICON="^c#689d6a^󰂄"  # Símbolo de carga
-else
-    if [ "$BAT" -ge 80 ]; then
-        ICON="^c#98971A^󰁹"
+    ICON="^c#689d6a^󰂄"  # Si carga
+else # Dependiendo del porcentaje
+    if [ "$BAT" -ge 100 ]; then
+        ICON="^c#98971a^󰁹"
+    elif [ "$BAT" -ge 90 ]; then
+        ICON="^c#98971a^󰂂"
+    elif [ "$BAT" -ge 80 ]; then
+        ICON="^c#98971a^󰂁"
     elif [ "$BAT" -ge 70 ]; then
-        ICON="^c#98971A^󰂁"
+        ICON="^c#b8bb26^󰂀"
     elif [ "$BAT" -ge 60 ]; then
-        ICON="^c#98971A^󰂀"  
+        ICON="^c#d79921^󰁿"
     elif [ "$BAT" -ge 50 ]; then
-        ICON="^c#98971A^󰁿"  
+        ICON="^c#d79921^󰁾"
     elif [ "$BAT" -ge 40 ]; then
-        ICON="^c#98971A^󰁾" 
+        ICON="^c#fabd2f^󰁽"
     elif [ "$BAT" -ge 30 ]; then
-        ICON="^c#98971A^󰁽" 
+        ICON="^c#fabd2f^󰁼"
     elif [ "$BAT" -ge 20 ]; then
-        ICON="^c#D79921^󰁼" 
+        ICON="^c#d65d0e^󰁻"
+    elif [ "$BAT" -ge 10 ]; then
+        ICON="^c#cc241d^󰁺"
     else
-        ICON="^c#FB4934^󰁻" 
+        ICON="^c#fb4934^󰂃"
     fi
 fi
-
 
 # Mostrar el símbolo y el porcentaje
 echo "$ICON ${BAT}%"
