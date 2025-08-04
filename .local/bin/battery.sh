@@ -27,11 +27,11 @@ else # Dependiendo del porcentaje
     elif [ "$BAT" -ge 80 ]; then
         ICON="^c#98971a^󰂁"
     elif [ "$BAT" -ge 70 ]; then
-        ICON="^c#b8bb26^󰂀"
+        ICON="^c#98971a^󰂀"
     elif [ "$BAT" -ge 60 ]; then
-        ICON="^c#d79921^󰁿"
+        ICON="^c#98971a^󰁿"
     elif [ "$BAT" -ge 50 ]; then
-        ICON="^c#d79921^󰁾"
+        ICON="^c#98971a^󰁾"
     elif [ "$BAT" -ge 40 ]; then
         ICON="^c#fabd2f^󰁽"
     elif [ "$BAT" -ge 30 ]; then
