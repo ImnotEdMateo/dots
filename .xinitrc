@@ -1,4 +1,4 @@
-feh --bg-scale $HOME/stuff/wallpaper.png &
+$HOME/.local/bin/randombg.sh &
 greenclip daemon &
 dwmblocks &
 picom &
