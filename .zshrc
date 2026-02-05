@@ -19,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias ls="lsd"
+alias ls="eza --icons"
 alias cat="bat"
 alias vi="'vim'"
 alias vim="nvim"
@@ -29,6 +29,6 @@ alias shutdown="shutdown now"
 alias reboot="sudo reboot now"
 
 # Created by `pipx` on 2024-09-05 00:27:00
-export PATH="$PATH:/home/edmateo/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 
