@@ -27,8 +27,6 @@ alias ssh="kitten ssh"
 alias icat="kitten icat"
 alias shutdown="shutdown now"
 alias reboot="sudo reboot now"
+alias ranger='ranger --choosedir=/tmp/ranger_cd && cd "$(cat /tmp/ranger_cd)"'
 
-# Created by `pipx` on 2024-09-05 00:27:00
 export PATH="$PATH:$HOME/.local/bin"
-
-
