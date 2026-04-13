@@ -13,6 +13,7 @@ External things to build and install:
 
 - [dmenu](https://tools.suckless.org/dmenu/)
 - [greenclip](https://github.com/erebe/greenclip/)
+- [better-swallow](https://github.com/afishhh/better-swallow)
 - [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip)
 - [Azuki Font](https://files.edmateo.site/azukifont.tar.gz) (For cool Japanese letters)
 
