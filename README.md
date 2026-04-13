@@ -3,10 +3,10 @@ This repo contains my shitty setup for my system
 
 ## DEPENDENCIES
 
-In **core and extra** repos of **Arch Linux**
+In **core and extra** repos of **Arch Linux** or **system, world, and galaxy** repos of [Artix Linux](https://artixlinux.org/)
 
 ~~~bash
-kitty picom ranger zsh xdotool neovim ripgrep feh eza bat pipewire pipewire-pulse pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot python-pillow xclip xorg-server xorg-xauth xorg-xsetroot
+kitty picom ranger zsh xdotool neovim ripgrep feh eza bat pipewire pipewire-pulse pipewire-jack pipewire-alsa alsa-utils brightnessctl playerctl scrot python-pillow xclip libxres xlibre-xserver xorg-xauth xorg-xsetroot 
 ~~~
 
 External things to build and install:
