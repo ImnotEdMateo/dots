@@ -1,20 +1,22 @@
 return {
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
+  'nvim-treesitter/nvim-treesitter',
+  lazy = false,
+  build = ':TSUpdate',
 
-    config = function()
-      local config = require("nvim-treesitter.configs")
-      config.setup({
-        ensure_installed = {"python", "html", "css", "javascript", "typescript", "lua", "htmldjango", "gomod", "gosum", "go"},
-        highlight = { enable = true},
-        indent = { enable = true},
-      })
-    end
-  },
-  {
-    "davidmh/mdx.nvim",
-    config = true,
-    dependencies = {"nvim-treesitter/nvim-treesitter"}
-  }
+  config = function()
+    local langs = require("langs")
+
+    local ts = vim.tbl_map(function(lang)
+      return lang.ts
+    end, langs)
+
+    local configs = require("nvim-treesitter")
+    configs.setup({
+      ensure_installed = vim.tbl_filter(function(x)
+        return x ~= nil
+      end, ts),
+      highlight = { enable = true },
+      indent = { enable = true },
+    })
+  end
 }
